@@ -16,6 +16,7 @@
     box-sizing: border-box;
     font-family:"Krub";
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 .container{
@@ -710,27 +711,30 @@ button:hover .square{
 .page-6-all .row{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
 }
 .page-6-all .text{
     width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 45px;
     align-items: baseline;
 }
 .page-6-all .pic{
     position: relative;
-    width: 500px;
-    height: 400px;
-    background-color: var(--white);
+    /* width: 500px; */
+    /* height: 400px; */
+    /* background-color: var(--white); */
 }
+
 .page-6-all .starting{
     display: flex;
     width: 300px;
     flex-direction: column;
     align-items: baseline;
 }
+
 .page-6-all .starting h2{
     color: var(--primary-color);
     font-size: 35px;
@@ -740,6 +744,14 @@ button:hover .square{
     color: var(--primary-color);
     font-size: 16px;
     font-weight: 500;
+}
+.page-6-all .question b{
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.page-6-all .question b:last-child{
+    transform: rotateY(50deg);
+    font-weight: 600;
 }
 .page-6-all .question{
     display: flex;
@@ -758,4 +770,138 @@ button:hover .square{
     position: absolute;
     rotate: 90deg;
     margin-left: 443px;
+}
+
+.page-6-all .pic img{
+    width: 600px;
+    margin-left: 130px;
+}
+.page-6-all .pic .card{
+    display: flex;
+    gap: 10px;
+    color: var(--white);
+    flex-direction: column;
+    align-items: baseline;
+    position: absolute;
+    padding: 40px;
+    margin-left: 90px;
+    margin-top: 100px;
+    background-color: var(--primary-color);
+}
+.page-6-all .pic .card div{
+    display: flex;
+    gap: 10px;
+    /* background-color: red */
+    align-items: center;
+    color: var(--white);
+}
+.page-6-all .pic .card div img{
+    margin-left: 5px;
+    width: 50px;
+}
+.page-6-all .pic .card button{
+    position: relative;
+    padding: 15px 45px;
+    font-size: 16px;
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+    overflow: hidden;
+    background-color: var(--orange);
+    color: white;
+}
+.page-6-all .pic .card button .square{
+    margin-left: 100px;
+    background-color: var(--white);
+}
+.page-6-all .pic .card button .square::after{
+    margin-left: 15px;
+    rotate: 10deg;
+    margin-top: -10px;
+    background-color: var(--white);
+}
+.page-6-all .pic .card button:hover .square::after{
+    margin-left: 25px;
+
+}
+.page-6-all .pic .card .primary-b{
+    color: var(--white);
+    background-color: #111C55;
+}
+.page-6-all .pic .card .bold{
+    font-size: 18px;
+    width: 250px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+.page-7{
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+}
+.page-7-all{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.page-7-all .table{
+    width: 250px;
+    height: 200px;
+    border: 1px solid #00000073;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.page-7-all .table img{
+    margin: 0 auto;
+}
+.page-7-all .table:first-child{
+    background-image: url(./assets/images/page-7-back.svg);
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.page-7-all .table div{
+    background: linear-gradient(0deg,#032D5F,#032c5f4b,#032c5f63,#09124233,#091242a2);
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+}
+.page-7-all .table .kvadrat{
+    width: 13px;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 25px;
+    box-shadow: 0 0 1px #000000;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--primary-color);
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #032D5F; 
 }
