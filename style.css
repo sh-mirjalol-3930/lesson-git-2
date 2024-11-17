@@ -251,9 +251,27 @@ button .square{
     margin-left: 100px;
     margin-top: -5px;
     transition: all 1s ease;
+    /* transform: rotate(180deg); */
+    z-index: +1;
 }
 
-
+.square::after{
+    content: ""; 
+    z-index: -2;
+    width: 20px;
+    height: 20px;
+    background-color: #032D5F;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 10px;
+    transition: all 0.5s ease
+    
+}
+button:hover .square::after{
+    margin-top: 2px;
+    transform: rotate(10deg);
+    margin-left: 1px;
+}
 
 
 
@@ -588,6 +606,7 @@ button:hover .square{
 
 .page-5{
     margin-top: 100px;
+    padding-bottom: 100px;
 }
 .page-5-all{
     display: flex;
@@ -595,10 +614,12 @@ button:hover .square{
     align-items: center;
 }
 .page-5 .page-5-all .card{
+    align-items: center;
     background-color: var(--secondary-color);
     display: flex;
     padding: 10px;
     flex-direction: column;
+    padding: 50px;
 }
 .page-5 .page-5-all .card button{
     position: relative;
@@ -614,6 +635,8 @@ button:hover .square{
 .page-5-all .row{
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
 }
 .page-5-all .card b:first-child{
     font-size: 18px;
@@ -625,5 +648,114 @@ button:hover .square{
 }
 .page-5-all .card b span{
     font-size: 18px;
+    font-weight: 400;
+    margin-left: -15px;
+}
+.page-5-all .card p:nth-child(6){
+    border-bottom: 1px solid #032c5f34;
+    /* color: white; */
 }
 
+
+.page-5-all .card p{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #032c5f34;
+    color: var(--primary-color);
+}
+.page-5-all .card button{
+    margin-top: 30px;
+}
+.page-5-all .card b{
+    color: var(--primary-color);
+}
+.page-5-all .card b:first-child{
+    color: var(--primary-color);
+    font-weight: 800;   
+    font-size: 25px;
+}
+.page-5-all .row .card:nth-child(2){
+    background-color: var(--primary-color);
+}
+.page-5-all .row .card:nth-child(2) b{
+    color: var(--white);
+}
+.page-5-all .row .card:nth-child(2) p{
+    color: var(--white);
+}
+.page-5-all .row .card:nth-child(2) button{
+    color: var(--primary-color);
+    background: linear-gradient(80deg,#FFB629,#FFDA56,#FFD7A6);
+}
+.page-5-all .row .card:nth-child(2) button .square{
+    background-color: var(--white);
+}
+.page-5-all .row .card:nth-child(2) button .square::after{
+    background-color: var(--white);
+}
+
+
+
+
+
+.page-6{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--secondary-color);
+}
+.page-6-all{
+    padding-top: 100px;
+}
+.page-6-all .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.page-6-all .text{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+}
+.page-6-all .pic{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: var(--white);
+}
+.page-6-all .starting{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: baseline;
+}
+.page-6-all .starting h2{
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: 800;
+}
+.page-6-all .starting b{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+.page-6-all .question{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    gap: 5px;
+}
+.page-6-all .question span{
+    color: var(--p-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+.page-6-all .question .arrow{
+    color: var(--orange);
+    position: absolute;
+    rotate: 90deg;
+    margin-left: 443px;
+}
